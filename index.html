@@ -1,0 +1,165 @@
+<!-- Intro to HTML & CSS I
+
+  Module Project Overview
+
+    You will build a website to display the bio of your favorite programmer, artist, etc.
+
+    In order to do this, you will create an `index.html` file and scaffold the document
+    with the elements shared by all HTML documents:
+
+    - doctype declaration
+    - html element
+    - head, containing a title and an optional style tag
+    - body, containing the markup that renders to the screen
+
+  Requirements
+
+    Review this article: https://www.w3schools.com/html/html5_semantic_elements.asp
+
+    Create an `index.html` file for your site, or use this same file.
+
+    For your site, you will make use of at least the following semantic elements:
+
+    - header (to contain the main heading of the site, and the nav)
+    - nav (to contain some links to navigate to the different sections of this document)
+    - section (each holding at least a heading and a paragraph)
+    - aside (containing an img and a caption)
+    - footer (containing a contact form)
+    - form (containing at least two inputs with their labels)
+
+    See an example of a finished site: https://bloominstituteoftechnology.github.io/img/anita-borg-bio-website.png
+
+    The example above is quite simple, but you can make your site as fancy as you'd like. -->
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Douglas Adams Mock Biography</title>
+        <style>
+          body {
+            margin: -17px 0 0 0;
+          }
+          .menu a {
+            text-decoration: none;
+            color: black;
+          }
+          #top-menu a {
+            padding: 25px;
+          }
+          #top-menu a:hover {
+            background-color:lightgray!important;
+          }
+          .menu ul {
+            list-style-type: none;
+          }
+          #top-menu {
+            height: 62px;
+            background-color: aqua;
+          }
+          footer {
+            background-color: aqua;
+            padding: 25px;
+          }
+          #contact {
+            width: 40%;
+          }
+          #contact label, #contact input {
+            margin-bottom: 15px;
+          }
+          #contact input {
+            width: 100%;
+          }
+          #bot-menu {
+            padding: 0 20px;
+          }
+          #bot-menu ul li {
+            padding: 10px 0;
+          }
+          #bot-menu a:hover{
+            text-decoration: underline;
+          }
+          #contact, #bot-menu {
+            display: inline-block;
+          }
+          #top-menu ul li {
+            float: left;
+            margin-top: 17px;
+          }
+          #brand {
+            height: 150px;
+            text-align: center;
+          }
+          #brand h1 {
+            padding-top: 50px;
+          }
+          main {
+            padding: 3%;
+          }
+          section {
+            width: 75%;
+          }
+          #sidebar {
+            padding-left: 80%;
+            position: sticky;
+            bottom: 25px;
+            right: 0px;
+          }
+          #sidebar ul li {
+            padding: 10px 0;
+          }
+        </style>
+      </head>
+      <body>
+        <header id="top">
+          <nav id="top-menu" class="menu">
+            <ul>
+              <li><a href="#top">Home</a></li>
+              <li><a href="#bio">Bio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <div id="brand">
+            <h1>Douglas Adams Biography</h1>
+          </div>
+        </header>
+        <main>
+          <section id="bio">
+            <h2>About Douglas Adams</h2>
+            <p>This is where I would put info about Douglas Adams if I were creating a legitimate website. Alas, this project is
+              for practice only, so this is an example of what content <span style="font-style: italic;">might</span> look like.
+            </p>
+            <br>
+            <h2>Works Adams is Known For</h2>
+            <p>Douglas Adams wrote 6 books in a trilogy called The Hitchhiker's Guide to the Galaxy, and references the
+              disparity
+              in the description of the 4th book, called "So Long, And Thanks for All the Fish" by calling it the 4th book in
+              the
+              trilogy.</p>
+          </section>
+          <aside id="sidebar">
+            <ul>
+              <li><a href="#top">Home</a></li>
+              <li><a href="#bio">Bio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </aside>
+        </main>
+        <footer>
+          <form id="contact">
+            <label id="Name">Name</label>
+            <input>
+            <label id="email">Email Address</label>
+            <input>
+            <label id="phone">Phone Number</label>
+            <input>
+          </form>
+          <nav id="bot-menu" class="menu">
+            <ul>
+              <li><a href="#top">Home</a></li>
+              <li><a href="#bio">Bio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </footer>
+      </body>
+    </html>
